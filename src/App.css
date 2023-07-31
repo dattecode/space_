@@ -1,0 +1,48 @@
+
+.app {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    transition: background-image 0.5s;
+}
+
+.title {
+    color: white;
+}
+
+.bg1 {
+    background-image: url("/public/img/bg1.jpg");
+}
+
+.bg2 {
+    background-image: url("/public/img/bg2.jpg");
+}
+
+.bg3 {
+    background-image: url("/public/img/bg3.jpg");
+}
+
+.bg4 {
+    background-image: url("/public/img/bg4.jpg");
+}
+
+.ship{
+    height: 9rem;
+    width: 9rem;
+    animation: move_ship 0.9s infinite;
+}
+
+@keyframes move_ship {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
